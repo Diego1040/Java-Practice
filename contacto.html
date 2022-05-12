@@ -6,17 +6,19 @@
         crossorigin="anonymous"> 
         <script src="contacto.js"></script>
         <link rel="stylesheet" href="./contacto.css">
-        <style>body{background-image: url();}</style>
+        <style>body{background-color: rgb(227, 235, 238); }</style>
+        
     </head>
 
-    <div class="container">
+  
+    <div class="container" id="Entrada">
         <div class="row">
             <div class="class-12"> <h1> <p class="text-warning bg-dark">Formulario de Contacto</p> </h1></div>
         </div>
     </div>
 
     <body>
-        <div class="container">
+        <div class="container" id="Complemento">
             <div class="row">
                 <div class="col-12">
                     <div class="row">
@@ -24,14 +26,15 @@
                         <div class="col-3"> <div class="p-3 mb-2 bg-warning text-white"> Apellido</div> </div>
                         <div class="col-3"> <div class="p-3 mb-2 bg-success text-white">Genero</div> </div>
                         <div class="col-3"> <div class="p-3 mb-2 bg-danger text-white">Correo Electronico</div> </div>
-                    </div>
+                    </div>    
+                    
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="row">
                             <div class="col-3">  
                                 <div class="mb-3"> <input type="text" class="form-control" id="Nombre" placeholder="Ingrese Nombre"> </div>
-                            </div>
+                            </div> <br>
 
                             <div class="col-3">
                                 <div class="mb-3"> <input type="email" class="form-control" id="Apellido" placeholder="Ingrese Apellido"> </div>
@@ -44,6 +47,8 @@
                                 </select> 
                             </div>
                             <div class="col-3"> <div class="form-floating mb-3"> <input type="email" class="form-control" id="Correo"><label for="floatingInput">Correo Electronico</label> </div> </div>
+                        
+
                         </div>
                     </div>
                 </div>
@@ -59,9 +64,17 @@
                 </div>    
             </div>
 
-            <input type="submit" onclick="Entry()">
+            <input type="submit" onclick="Entry()" id="Entry">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
            
-            
+    
         </div>
 
         

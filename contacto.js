@@ -15,5 +15,33 @@ function Entry(){
     let comentarios = document.getElementById("Comentarios")
     console.log(comentarios.value)
 
+    let ValidarEdad = document.getElementById("ValidarEdad")
+    console.log(ValidarEdad)
+
+
+
+
+
+    
+
 };
+
+// Recibir Datos nulos
+function Nombre(){
+    let elem = document.getElementById("Nombre")
+    let msj = ""
+
+    if (elem.value == ""){
+        msj = "Debe Completar el campo nombre"
+        
+    }else{
+        msj ="recibido"
+    }
+    
+}
+
+
+
+
+
 
