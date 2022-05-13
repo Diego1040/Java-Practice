@@ -1,7 +1,15 @@
 
 function Entry(){
+
+    
     let nombre = document.getElementById("Nombre")
     console.log(nombre.value)
+
+    if (nombre.value ==""){
+        alert("Error. Datos No Validos")
+    }else{
+        alert("Datos Recibidos")
+    }
 
     let apellido = document.getElementById("Apellido")
     console.log(apellido.value)
@@ -24,7 +32,7 @@ function Entry(){
 
     
 
-};
+}
 
 // Recibir Datos nulos
 function Nombre(){
