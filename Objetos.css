@@ -1,3 +1,6 @@
 #Guardar{padding:0px 0px 0px 43%;}
 
-#t{margin: 1em auto;}
+#t{margin: 1em auto;
+border:"";
+background-color:"";
+border-radius:  10px;;}
