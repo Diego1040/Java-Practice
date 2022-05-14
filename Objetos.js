@@ -19,6 +19,7 @@ function Example(){
     
     
     }
+    
     arreglo.push(contacto)
     console.log(contacto)
     console.log(variable2)
