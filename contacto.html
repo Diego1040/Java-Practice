@@ -6,7 +6,18 @@
         crossorigin="anonymous"> 
         <script src="contacto.js"></script>
         <link rel="stylesheet" href="./contacto.css">
-        <style>body{background-color: rgb(227, 235, 238); }</style>
+        <style>body{background-color: rgb(227, 235, 238); }
+
+        h1{font-family: monospace;}
+
+        .enviar{
+            padding-left: 100px;
+        }
+        
+        
+        
+        
+        </style>
         
     </head>
 
@@ -69,7 +80,7 @@
                 </div>    
             </div>
 
-            <input type="submit" onclick="Entry()" > <br> 
+            <input type="submit" onclick="Entry()" > <br> <br>
 
 
     
@@ -79,21 +90,19 @@
 
         <div class="container">
             <div class="row">
+                <h2>Formulario Example</h2>
                 <div class="col-12">
                     <div class="row">
                         <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Example label</label>
+                            <label for="formGroupExampleInput" class="form-label">Example Console</label>
                             <input type="text" class="form-control" id="nameE" placeholder="Example input placeholder">
                         </div>
 
-                         <p> Edad</p>
+                         <p>Example Console Age</p>
                         <div class="col-12"> <input type="number" id="edadE"></div>  <br><br>
 
-                    <div class="col-6"> <input type="submit" onclick="Example()" ></div>
-                    <div class="col-6"> <button onclick="list()">Listar</button></div>
-
-                        
-                        
+                    <div class="col" id="enviar"> <button type="button" onclick="Example()" class="btn btn-primary">Guardar</button> </div>
+                    <div class="col" id="listar"> <button type="button" onclick="list()" class="btn btn-danger">Listar</button></div>
                        
                        
 

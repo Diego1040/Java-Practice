@@ -1,6 +1,5 @@
 
 function Entry(){
-
     
     let nombre = document.getElementById("Nombre")
     console.log(nombre.value)
@@ -14,8 +13,21 @@ function Entry(){
     let apellido = document.getElementById("Apellido")
     console.log(apellido.value)
 
-    let genero = document.getElementById("Genero")
-    console.log(genero.value)
+    let genero = document.getElementById("Genero").value
+
+    let gender = ""
+
+    if (genero == 1){
+
+        gender ="Hombre"
+    
+    }if(genero == 2){
+
+        gender = "Mujer"
+    }
+
+    console.log(gender)
+
 
     let correo = document.getElementById("Correo")
     console.log(correo.value)
@@ -56,7 +68,10 @@ var arreglo = []
 var obj = new Object()
 
 function Example(){
-    let element_name=  document.getElementById("nameE")
+
+    flag = 0
+
+    let element_name= document.getElementById("nameE")
     let element_edad= document.getElementById("edadE")
     
 
@@ -64,17 +79,31 @@ function Example(){
     contacto.nombre= element_name.value
     contacto.edad = element_edad.value
 
+    if(element_name.value == ""){
+        flag == 1
+    }
+
+    if(element_edad.value == ""){
+        flag == 1
+    }
+
+
+    if(flag == 0){
+        console.log(contacto)
+        console.push(contacto)
+    }
+    
+    element_name.value == ""
+    element_edad.value == ""
+
     
     let variable2 = {
         nombre: element_name.value ,
         edad: element_edad.value
-
     
     
     }
-    arreglo.push(contacto)
-    console.log(contacto)
-    console.log(variable2)
+   
 }
 
 function list(){

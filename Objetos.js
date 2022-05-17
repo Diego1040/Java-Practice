@@ -3,6 +3,9 @@ var arreglo = []
 var obj = new Object()
 
 function Example(){
+
+    flag= 0 
+
     let element_name=  document.getElementById("nombre")
     let element_edad= document.getElementById("edad")
     
@@ -12,20 +15,27 @@ function Example(){
     contacto.edad = element_edad.value
 
     
-    let variable2 = {
-        nombre: element_name.value ,
-        edad: element_edad.value
-
-    
-    
+    if(element_name.value == ""){
+        flag = 1
     }
-    
+    if(element_edad.value == ""){
+        flag = 1
+    }
+    if (flag == 0){
+        
     arreglo.push(contacto)
-    
-
-
     console.log(contacto)
-    console.log(variable2)
+
+    element_name.value = ""
+    element_edad.value = ""
+
+    }else{
+        alert("Debe llenar Todos los campos")
+    }
+
+
+
+
 }
 
 function list(){
