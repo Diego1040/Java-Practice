@@ -7,7 +7,7 @@ function Example(){
     flag= 0 
 
     let element_name=  document.getElementById("nombre")
-    let element_edad= document.getElementById("edad")
+    let element_edad=  document.getElementById("edad")
     
 
     let contacto = new Object()
@@ -18,9 +18,11 @@ function Example(){
     if(element_name.value == ""){
         flag = 1
     }
+
     if(element_edad.value == ""){
         flag = 1
     }
+    
     if (flag == 0){
         
     arreglo.push(contacto)

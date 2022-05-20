@@ -71,38 +71,31 @@ function Example(){
 
     flag = 0
 
-    let element_name= document.getElementById("nameE")
+    let element_nombre= document.getElementById("nameE")
     let element_edad= document.getElementById("edadE")
     
 
     let contacto = new Object()
-    contacto.nombre= element_name.value
+    contacto.nombre= element_nombre.value
     contacto.edad = element_edad.value
 
-    if(element_name.value == ""){
-        flag == 1
+    if(element_nombre.value == ""){
+        flag = 1
     }
 
     if(element_edad.value == ""){
-        flag == 1
+        flag = 1
     }
 
 
     if(flag == 0){
         console.log(contacto)
-        console.push(contacto)
-    }
+        arreglo.push(contacto)
+    }else
+    alert("Debe Llenar los campos")
     
-    element_name.value == ""
+    element_nombre.value == ""
     element_edad.value == ""
-
-    
-    let variable2 = {
-        nombre: element_name.value ,
-        edad: element_edad.value
-    
-    
-    }
    
 }
 
